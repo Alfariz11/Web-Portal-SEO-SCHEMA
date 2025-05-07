@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# News Portal 🌐
 
-## Getting Started
+News Portal adalah sebuah aplikasi portal berita berbasis web yang dibangun menggunakan Next.js (versi terbaru) dengan TypeScript. Aplikasi ini memungkinkan pengguna untuk membaca berita dari berbagai sumber dan melakukan login menggunakan akun Google (OAuth2).
 
-First, run the development server:
+## 🚀 Fitur Utama
+- 🔐 **Login dengan Google OAuth2:** Pengguna dapat login menggunakan akun Google.
+- 📰 **Daftar Berita dari 3 Sumber API:**
+  - NewsAPI
+  - GNews API
+  - Currents API
+- 📑 **Detail Berita Lengkap:** Setiap berita menampilkan:
+  - Judul, isi berita, gambar, sumber, penulis, dan waktu publikasi.
+- 🔔 **Toast Notifikasi:** Notifikasi muncul ketika login berhasil.
+- 📱 **Responsive Design:** Dapat diakses dengan baik melalui perangkat desktop maupun mobile.
 
+---
+
+## 📌 Teknologi yang Digunakan
+- **Frontend:** Next.js (TypeScript) dengan App Directory (Next.js 13+)
+- **Autentikasi:** NextAuth (OAuth2 Google)
+- **API Berita:** Axios untuk mendapatkan berita dari:
+  - NewsAPI
+  - GNews API
+  - Currents API
+- **Styling:** Tailwind CSS
+- **Notifikasi:** React-Toastify
+
+---
+
+## 📌 Prasyarat
+Sebelum memulai, pastikan Anda memiliki:
+- Node.js (v16.8 atau lebih baru)
+- Akun Google Cloud untuk OAuth2
+- API Key dari:
+  - [NewsAPI](https://newsapi.org/)
+  - [GNews API](https://gnews.io/)
+  - [Currents API](https://currentsapi.services/)
+
+---
+
+## 📥 Cara Install dan Menjalankan Aplikasi
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
