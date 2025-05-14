@@ -35,6 +35,16 @@ Sebelum memulai, pastikan Anda memiliki:
   - [NewsAPI](https://newsapi.org/)
   - [GNews API](https://gnews.io/)
   - [Currents API](https://currentsapi.services/)
+- Buat File .env.local di root untuk memasukkan API Key
+ ```bash
+GOOGLE_CLIENT_ID=ISI_API_GOOGLE_CLIENT
+GOOGLE_CLIENT_SECRET=ISI_DENGAN_GOOGLE_CLIENT_SECRET
+NEXTAUTH_SECRET=MASUKKAN_AUTH_SECRET_ANDA_SENDIRI
+NEWS_API_KEY=MASUKKAN_API_KEY
+GNEWS_API_KEY=MASUKKAN_API_KEY
+CURRENTS_API_KEY=MASUKKAN_API_KEY
+NEXTAUTH_URL=http://localhost:3000
+```
 
 ---
 
